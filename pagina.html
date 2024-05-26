@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo codice fiscale</title>
+    
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="titolo">
+        <h2>INSERIRE I DATI</h2>
+
+    </div>
+
+    <input type="text" id="cognome"  required placeholder=" Cognome">
+    <input type="text" id="nome"  required placeholder=" Nome">
+    <br>
+    <input type="number" id="giorno"  required placeholder=" Giorno di nascita" max="31" min="1">
+    <input type="number" id="mese"  required placeholder=" Mese di nascita" max="12" min="1">
+    <input type="number" id="anno"  required placeholder=" Anno di nascita" max = "2023" min="1900">
+    <br>
+    
+    <div class="form-field">
+    <label for="scelta">Sesso:  </label>
+    <select id="sesso">
+        <option disabled selected>Seleziona un'opzione</option>
+        <option value="maschio">Maschio</option>
+        <option value="femmina">Femmina</option>
+    </select>
+</div>
+    
+    <div class="form-field">
+    <label for="scelta">Seleziona la città di nascita:  </label>
+        <select id="paese">
+        <option disabled selected>Seleziona un'opzione</option>
+          <option value="brescia">Brescia</option>
+          <option value="ghedi">Ghedi</option>
+          <option value="milano">Milano</option>
+          <option value="roma">Roma</option>
+          <option value="bergamo">Bergamo</option>
+
+        </select>
+      </div>
+
+    <br>
+    <button id="genera">Genera</button>
+
+<h2 id="codice_fiscale"></h2>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
